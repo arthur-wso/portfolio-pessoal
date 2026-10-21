@@ -12,9 +12,8 @@ function Home() {
 		<Container>
 			<About>
 				<Title>
-					▼ Arthur Pereira
-					<br />
-					Desenvolvedor Full Stack
+					{'<Arthur Pereira/>'}
+					<br />▼ Desenvolvedor Full Stack
 					<br />
 				</Title>
 				<h2
