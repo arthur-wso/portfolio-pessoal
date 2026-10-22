@@ -57,7 +57,7 @@ export const Tags = styled.div`
 export const Tag = styled.span`
     font-size: 14px;
     font-weight: 700;
-    color: #93cdd4;
+    color: ${(props) => props.$cor};
     padding: 2px 12px;
     border: 2px solid currentColor;
     border-radius: 10px;
@@ -73,10 +73,10 @@ export const Button = styled.a`
     font-weight: 700;
     text-decoration: none;
     box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
-    transition: all 0.6 ease;
+    transition: all 0.6s ease;
 
     &:hover{
         border-color: #4DFFF3;
-        box-shadow: 0 0 14px rgba(0, 229, 225, 0.7);
+        box-shadow: 0 0 14px rgba(0, 229, 229, 0.7);
     }
 `;

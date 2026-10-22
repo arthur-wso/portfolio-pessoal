@@ -1,3 +1,4 @@
+import { projects } from '../../data/projects';
 import {
 	Button,
 	Case,
@@ -16,28 +17,29 @@ function Projects() {
 		<Container>
 			<Title>Meus Projetos</Title>
 			<Section>
-				<Case>
-					<Shot>{'</>'}</Shot>
-					<div>
-						<Name>Login de Usuários</Name>
-						<Description>
-							Aplicação Full Stack de cadastro e consulta de usuários, com API
-							REST desenvolvida por mim. O usuário pode se registrar e
-							visualizar a lista de usuários cadastrados.
-						</Description>
-						<Tags>
-							<Tag>JavaScript</Tag>
-							<Tag>React</Tag>
-						</Tags>
-						<Button
-							href="https://github.com/arthur-wso/login-de-usuarios"
-							target="_blank"
-							rel="noreferrer"
-						>
-							Ver Código
-						</Button>
-					</div>
-				</Case>
+				{projects.map((projeto) => (
+					<Case key={projeto.id}>
+						<Shot>{'</>'}</Shot>
+						<div>
+							<Name>{projeto.titulo}</Name>
+							<Description>{projeto.descricao}</Description>
+							<Tags>
+								{projeto.tecnologias.map((tec) => (
+									<Tag key={tec.nome} $cor={tec.cor}>
+										{tec.nome}
+									</Tag>
+								))}
+							</Tags>
+							<Button
+								href="https://github.com/arthur-wso/login-de-usuarios"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Ver Código
+							</Button>
+						</div>
+					</Case>
+				))}
 			</Section>
 		</Container>
 	);
