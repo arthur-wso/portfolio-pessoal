@@ -39,6 +39,15 @@ function Projects() {
 									Ver Código
 								</Button>
 							)}
+							{projeto.linkDemo && (
+								<Button
+									href={projeto.linkDemo}
+									target="_blank"
+									rel="noreferrer"
+								>
+									Ver Demo
+								</Button>
+							)}
 						</div>
 					</Case>
 				))}
