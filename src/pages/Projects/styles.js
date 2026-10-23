@@ -74,6 +74,7 @@ export const Button = styled.a`
     text-decoration: none;
     box-shadow: 0 0 8px rgba(0, 229, 255, 0.4);
     transition: all 0.6s ease;
+    margin: 0 10px 10px 0;
 
     &:hover{
         border-color: #4DFFF3;
