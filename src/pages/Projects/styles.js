@@ -21,6 +21,10 @@ export const Case = styled.article`
     gap: 40px;
     align-items: center;
     margin-top: 60px;
+
+    @media (max-width: 760px) {
+        grid-template-columns: 1fr;
+    }
 `;
 
 export const Shot = styled.div`
@@ -33,13 +37,14 @@ export const Shot = styled.div`
     font-size: 40px;
     color: #4DFFF3;
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
-
-    order: ${(props) => (props.$inverso ? 1 : 0)};
-
     transition: all 0.6s ease;
 
     &:hover{
         box-shadow: 0 0 700px rgba(0, 229, 255, 0.8);
+    }
+
+    @media (min-width: 761px) {
+    order: ${(props) => (props.$inverso ? 1 : 0)};
     }
 `;
 
