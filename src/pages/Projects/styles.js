@@ -33,6 +33,8 @@ export const Shot = styled.div`
     font-size: 40px;
     color: #4DFFF3;
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
+
+    order: ${(props) => (props.$inverso ? 1 : 0)};
 `;
 
 export const Name = styled.h2`

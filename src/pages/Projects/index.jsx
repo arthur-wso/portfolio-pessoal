@@ -17,9 +17,9 @@ function Projects() {
 		<Container>
 			<Title>Meus Projetos</Title>
 			<Section>
-				{projects.map((projeto) => (
+				{projects.map((projeto, indice) => (
 					<Case key={projeto.id}>
-						<Shot>{'</>'}</Shot>
+						<Shot $inverso={indice % 2 === 1}>{'</>'}</Shot>
 						<div>
 							<Name>{projeto.titulo}</Name>
 							<Description>{projeto.descricao}</Description>
