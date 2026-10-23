@@ -35,6 +35,12 @@ export const Shot = styled.div`
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
 
     order: ${(props) => (props.$inverso ? 1 : 0)};
+
+    transition: all 0.6s ease;
+
+    &:hover{
+        box-shadow: 0 0 700px rgba(0, 229, 255, 0.8);
+    }
 `;
 
 export const Name = styled.h2`
