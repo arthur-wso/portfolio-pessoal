@@ -30,13 +30,15 @@ function Projects() {
 									</Tag>
 								))}
 							</Tags>
-							<Button
-								href="https://github.com/arthur-wso/login-de-usuarios"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Ver Código
-							</Button>
+							{projeto.linkCodigo && (
+								<Button
+									href={projeto.linkCodigo}
+									target="_blank"
+									rel="noreferrer"
+								>
+									Ver Código
+								</Button>
+							)}
 						</div>
 					</Case>
 				))}

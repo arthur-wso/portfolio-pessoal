@@ -13,7 +13,7 @@ export const projects = [
 			{ nome: 'Prisma', cor: '#93cdd4' },
 		],
 		imagem: null,
-		linkCodigo: '',
+		linkCodigo: 'https://github.com/arthur-wso/login-de-usuarios',
 		linkDemo: '',
 	},
 	{
