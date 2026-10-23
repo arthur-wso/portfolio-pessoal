@@ -10,7 +10,7 @@ export const projects = [
 			{ nome: 'API REST', cor: '#93cdd4' },
 			{ nome: 'Node.js', cor: '#339933' },
 			{ nome: 'MongoDB', cor: '#47A248' },
-			{ nome: 'Prisma', cor: '#93cdd4' },
+			{ nome: 'Git & GitHub', cor: '#f05032' },
 		],
 		imagem: null,
 		linkCodigo: 'https://github.com/arthur-wso/login-de-usuarios',
@@ -27,7 +27,7 @@ export const projects = [
 			{ nome: 'Git & GitHub', cor: '#f05032' },
 		],
 		imagem: null,
-		linkCodigo: '',
+		linkCodigo: 'https://github.com/arthur-wso/Conversor-de-Moedas',
 		linkDemo: '',
 	},
 	{
@@ -41,7 +41,7 @@ export const projects = [
 			{ nome: 'HTML', cor: '#E34F26' },
 		],
 		imagem: null,
-		linkCodigo: '',
+		linkCodigo: 'https://github.com/arthur-wso/JokenP-',
 		linkDemo: '',
 	},
 ];
