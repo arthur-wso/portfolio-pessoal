@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledNav = styled.div`
     width: 100%;
-    height: 90px;
+    min-height: 90px;
     background: rgba(6, 22, 37, 0.8);
     backdrop-filter: blur(10px);
     display: flex;
@@ -13,6 +13,12 @@ export const StyledNav = styled.div`
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     z-index: 100;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    padding: 12px 0;
+
+    @media (max-width: 360px) {
+        gap: 16px;
+    }
 `;
 
 export const Link = styled.a`
