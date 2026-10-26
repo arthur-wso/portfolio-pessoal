@@ -13,7 +13,9 @@ function Home() {
 			<About>
 				<Title>
 					{'<Arthur Pereira/>'}
-					<br />▼ Desenvolvedor Full Stack
+					<br />
+					<br />
+					Desenvolvedor Full Stack
 					<br />
 				</Title>
 				<h2
@@ -25,6 +27,7 @@ function Home() {
 				>
 					Sobre Mim
 				</h2>
+				<br />
 				<Paragraph>
 					<SpanInitial>Olá!</SpanInitial>, eu sou o <Span>Arthur</Span> e eu,
 					como quase todos os Dev's pelo mundo comecei aprendendo HTML e CSS

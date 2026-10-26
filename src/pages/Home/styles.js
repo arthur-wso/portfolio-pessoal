@@ -14,13 +14,19 @@ export const Title = styled.h1`
     color: #93cdd4;
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
     margin-bottom: 60px;
+    
+    @media (max-width: 760px){
+        font-size: 30px;
+        padding: 20px;
+    }
 `;
 export const Paragraph = styled.p`
     color: #ffffffbe;
     text-shadow: 0 0 10px rgba(224, 227, 227, 0.9);
     font-size: 20px;
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 20px;
 `;
 
 export const Span = styled.span`
