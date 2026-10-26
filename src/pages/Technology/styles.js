@@ -5,16 +5,20 @@ export const Container = styled.div``;
 export const Title = styled.h2`
     color: #fff;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: #93cdd4;
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
+
+    @media (min-width: 760px) {
+        font-size: 60px;
+    }
 `;
 
 export const Section = styled.section`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 300px;
+    grid-template-columns: 1fr;
     gap: 50px;
+    padding: 0 20px;
 
     img {
 
@@ -27,6 +31,12 @@ export const Section = styled.section`
         text-align: center;
         margin-bottom: 20px;
     }
+
+    @media (min-width: 760px) {
+        max-width: 1100px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
 `;
 
 export const Article = styled.article`
@@ -35,7 +45,7 @@ export const Article = styled.article`
     border-radius: 20px;
     padding: 20px;
     color: #fff;
-    height: 360px;
+    height: auto;
 `;
 
 export const Paragraph = styled.p`
