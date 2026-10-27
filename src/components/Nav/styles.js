@@ -6,7 +6,7 @@ export const StyledNav = styled.div`
     background: rgba(6, 22, 37, 0.8);
     backdrop-filter: blur(10px);
     display: flex;
-    gap: 60px;
+    gap: 16px;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #2B3A67;
@@ -16,8 +16,8 @@ export const StyledNav = styled.div`
     flex-wrap: wrap;
     padding: 12px 0;
 
-    @media (max-width: 360px) {
-        gap: 16px;
+    @media (min-width: 760px) {
+        gap: 60px;
     }
 `;
 
