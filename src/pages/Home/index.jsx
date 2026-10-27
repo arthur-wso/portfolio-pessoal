@@ -14,7 +14,6 @@ function Home() {
 				<Title>
 					{'<Arthur Pereira/>'}
 					<br />
-					<br />
 					Desenvolvedor Full Stack
 					<br />
 				</Title>
