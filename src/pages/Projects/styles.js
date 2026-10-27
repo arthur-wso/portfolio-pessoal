@@ -4,9 +4,13 @@ export const Container = styled.div``;
 
 export const Title = styled.h1`
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
     color: #93cdd4;
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
+
+    @media (min-width: 760px) {
+        font-size: 60px;
+    }
 `;
 
 export const Section = styled.section`
@@ -17,13 +21,13 @@ export const Section = styled.section`
 
 export const Case = styled.article`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
     align-items: center;
     margin-top: 60px;
 
-    @media (max-width: 760px) {
-        grid-template-columns: 1fr;
+    @media (min-width: 760px) {
+        grid-template-columns: 1fr 1fr;
     }
 `;
 
@@ -43,8 +47,8 @@ export const Shot = styled.div`
         box-shadow: 0 0 700px rgba(0, 229, 255, 0.8);
     }
 
-    @media (min-width: 761px) {
-    order: ${(props) => (props.$inverso ? 1 : 0)};
+    @media (min-width: 760px) {
+        order: ${(props) => (props.$inverso ? 1 : 0)};
     }
 `;
 
@@ -91,6 +95,6 @@ export const Button = styled.a`
 
     &:hover{
         border-color: #4DFFF3;
-        box-shadow: 0 0 14px rgba(0, 229, 229, 0.7);
+        box-shadow: 0 0 14px rgba(0, 229, 255, 0.7);
     }
 `;
