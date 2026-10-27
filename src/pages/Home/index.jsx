@@ -1,5 +1,6 @@
 import {
 	About,
+	AboutMe,
 	Container,
 	Paragraph,
 	Span,
@@ -17,15 +18,7 @@ function Home() {
 					Desenvolvedor Full Stack
 					<br />
 				</Title>
-				<h2
-					style={{
-						textAlign: 'center',
-						fontSize: '50px',
-						marginBottom: '10px',
-					}}
-				>
-					Sobre Mim
-				</h2>
+				<AboutMe>Sobre Mim</AboutMe>
 				<br />
 				<Paragraph>
 					<SpanInitial>Olá!</SpanInitial>, eu sou o <Span>Arthur</Span> e eu,

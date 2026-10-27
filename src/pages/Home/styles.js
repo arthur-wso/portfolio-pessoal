@@ -17,10 +17,21 @@ export const Title = styled.h1`
     margin-bottom: 60px;
     
     @media (min-width: 760px){
-        font-size: 60px;
+        font-size: 50px;
         padding: 0;
     }
 `;
+
+export const AboutMe = styled.h2`
+    text-align: center;
+    font-size: 30px;
+	margin-bottom: 10px;
+
+    @media (min-width: 760px) {
+        font-size: 60px;
+    }
+`;
+
 export const Paragraph = styled.p`
     color: #ffffffbe;
     text-shadow: 0 0 10px rgba(224, 227, 227, 0.9);
