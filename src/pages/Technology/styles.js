@@ -5,12 +5,14 @@ export const Container = styled.div``;
 export const Title = styled.h2`
     color: #fff;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
+    padding: 0 20px;
     color: #93cdd4;
     text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
 
     @media (min-width: 760px) {
         font-size: 60px;
+        padding: 0;
     }
 `;
 
