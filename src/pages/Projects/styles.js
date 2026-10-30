@@ -31,17 +31,16 @@ export const Case = styled.article`
     }
 `;
 
-export const Shot = styled.div`
+export const Shot = styled.img`
+
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border: 5px solid #4DFFF3;
     border-radius: 20px;
-    min-height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    color: #4DFFF3;
-    text-shadow: 0 0 10px rgba(0, 229, 255, 0.9);
     transition: all 0.6s ease;
+    cursor: zoom-in;
 
     &:hover{
         box-shadow: 0 0 700px rgba(0, 229, 255, 0.8);
@@ -97,4 +96,24 @@ export const Button = styled.a`
         border-color: #4DFFF3;
         box-shadow: 0 0 14px rgba(0, 229, 255, 0.7);
     }
+`;
+
+export const Overlay = styled.div`
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    cursor: zoom-out;
+`;
+
+export const ZoomImage = styled.img`
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid #4DFFF3;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,229, 255, 0.7);
 `;

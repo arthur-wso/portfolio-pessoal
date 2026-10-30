@@ -1,3 +1,7 @@
+import currencyConverter from '../assets/projects/currency-converter.webp';
+import jokenpo from '../assets/projects/jokenpo.webp';
+import loginUsers from '../assets/projects/login-users.webp';
+
 export const projects = [
 	{
 		id: 1,
@@ -12,7 +16,7 @@ export const projects = [
 			{ nome: 'MongoDB', cor: '#47A248' },
 			{ nome: 'Git & GitHub', cor: '#f05032' },
 		],
-		imagem: null,
+		imagem: loginUsers,
 		linkCodigo: 'https://github.com/arthur-wso/login-de-usuarios',
 		linkDemo: '',
 	},
@@ -26,7 +30,7 @@ export const projects = [
 			{ nome: 'Fetch API', cor: '#93cdd4' },
 			{ nome: 'Git & GitHub', cor: '#f05032' },
 		],
-		imagem: null,
+		imagem: currencyConverter,
 		linkCodigo: 'https://github.com/arthur-wso/Conversor-de-Moedas',
 		linkDemo: '',
 	},
@@ -40,7 +44,7 @@ export const projects = [
 			{ nome: 'CSS', cor: '#1572b6' },
 			{ nome: 'HTML', cor: '#E34F26' },
 		],
-		imagem: null,
+		imagem: jokenpo,
 		linkCodigo: 'https://github.com/arthur-wso/JokenP-',
 		linkDemo: '',
 	},
